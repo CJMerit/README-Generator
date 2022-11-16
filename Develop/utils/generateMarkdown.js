@@ -40,9 +40,9 @@ function renderLicenseLink(license) {
   case 'Apache license 2.0':
       return '(https://opensource.org/licenses/Apache-2.0)';
   case 'GNU General Public License v3.0':
-      return '(https://opensource.org/licenses/GPL-3.0)'
+      return '(https://opensource.org/licenses/GPL-3.0)';
   case 'MIT License':
-      return '(https://opensource.org/licenses/MIT)'
+      return '(https://opensource.org/licenses/MIT)';
   case 'BSD 2-clause "Simplified" license':
       return '(https://opensource.org/licenses/BSD-2-Clause)';
   case 'BSD 3-clause "New" or "Revised" license':
@@ -52,17 +52,17 @@ function renderLicenseLink(license) {
   case 'Creative Commons Zero v1.0 Universal':
       return '(https://creativecommons.org/publicdomain/zero/1.0/)';
   case 'Eclipse Public License 2.0':
-      return '(https://opensource.org/licenses/EPL-2.0)'
+      return '(https://opensource.org/licenses/EPL-2.0)';
   case 'GNU Affero General Public License v3.0':
-      return '(https://opensource.org/licenses/AGPL-3.0)'
+      return '(https://opensource.org/licenses/AGPL-3.0)';
   case 'GNU General Public License v2.0':
-      return '(https://opensource.org/licenses/GPL-2.0)'
+      return '(https://opensource.org/licenses/GPL-2.0)';
   case 'GNU Lesser General Public License v2.1':
-      return '(https://opensource.org/licenses/LGPL-2.1)'
+      return '(https://opensource.org/licenses/LGPL-2.1)';
   case 'Mozilla Public License 2.0':
-      return '(https://opensource.org/licenses/MPL-2.0)'
+      return '(https://opensource.org/licenses/MPL-2.0)';
   case 'The Unlicense':
-      return '(https://opensource.org/licenses/unlicense)'
+      return '(https://opensource.org/licenses/unlicense)';
     default:
       return '';
   }
@@ -73,31 +73,31 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   switch(license){
     case 'Apache license 2.0':
-        return '(https://opensource.org/licenses/Apache-2.0)';
+        return 'This app is covered under Apache license 2.0. Read more at';
     case 'GNU General Public License v3.0':
-        return '(https://opensource.org/licenses/GPL-3.0)'
+        return 'This app is covered under GNU General Public License v3.0. Read more at';
     case 'MIT License':
-        return '(https://opensource.org/licenses/MIT)'
+        return 'This app is covered under MIT License. Read more at';
     case 'BSD 2-clause "Simplified" license':
-        return '(https://opensource.org/licenses/BSD-2-Clause)';
+        return 'This app is covered under BSD 2-clause "Simplified" license. Read more at';
     case 'BSD 3-clause "New" or "Revised" license':
-        return '(https://opensource.org/licenses/BSD-3-Clause)';
+        return 'This app is covered under BSD 3-clause "New" or "Revised" license. Read more at';
     case 'Boost Software License 1.0':
-        return '(https://opensource.org/licenses/BSL-1.0)';
+        return 'This app is covered under Boost Software License 1.0. Read more at';
     case 'Creative Commons Zero v1.0 Universal':
-        return '(https://creativecommons.org/publicdomain/zero/1.0/)';
+        return 'This app is covered under Creative Commons Zero v1.0 Universal. Read more at';
     case 'Eclipse Public License 2.0':
-        return '(https://opensource.org/licenses/EPL-2.0)'
+        return 'This app is covered under Eclipse Public License 2.0. Read more at';
     case 'GNU Affero General Public License v3.0':
-        return '(https://opensource.org/licenses/AGPL-3.0)'
+        return 'This app is covered under GNU Affero General Public License v3.0. Read more at';
     case 'GNU General Public License v2.0':
-        return '(https://opensource.org/licenses/GPL-2.0)'
+        return 'This app is covered under GNU General Public License v2.0. Read more at';
     case 'GNU Lesser General Public License v2.1':
-        return '(https://opensource.org/licenses/LGPL-2.1)'
+        return 'This app is covered under GNU Lesser General Public License v2.1. Read more at';
     case 'Mozilla Public License 2.0':
-        return '(https://opensource.org/licenses/MPL-2.0)'
+        return 'This app is covered under Mozilla Public License 2.0. Read more at';
     case 'The Unlicense':
-        return 'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.'
+        return 'This app is covered under The Unlicense. Read more at';
       default:
         return '';
     }
@@ -118,7 +118,6 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
@@ -128,15 +127,18 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)} [${data.license}]${renderLicenseLink(data.license)}
 
   ## Contributing
   To find out how to contribute:
   ${data.contribution}
 
+  ## Tests
+  ${data.tests}
+
   ## Questions
-  ![Github](https://github.com/${data.github}/)
-  ![${data.email}](${data.email})
+  [Github](https://github.com/${data.github}/)
+  [${data.email}](${data.email})
 `;
 }
 

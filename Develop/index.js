@@ -55,6 +55,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'Are there any tests to run?',
+        name: 'tests'
+    },
+    {
+        type: 'input',
         message: 'What is your Github profile name?',
         name: 'github'
     },
@@ -83,7 +88,8 @@ function init() {
             questions[4],
             questions[5],
             questions[6],
-            questions[7]
+            questions[7],
+            questions[8]
         ])
         .then((response) => {
             writeToFile(`${response.title}.md`, response)
