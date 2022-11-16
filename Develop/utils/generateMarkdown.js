@@ -130,14 +130,14 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)} [${data.license}]${renderLicenseLink(data.license)}
 
   ## Contributing
-  To find out how to contribute:
+  To find out how to contribute:  
   ${data.contribution}
 
   ## Tests
   ${data.tests}
 
   ## Questions
-  [Github](https://github.com/${data.github}/)
+  [Github](https://github.com/${data.github}/)  
   [${data.email}](${data.email})
 `;
 }
