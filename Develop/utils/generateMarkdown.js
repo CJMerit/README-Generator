@@ -107,38 +107,39 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title} 
 
-  [${renderLicenseBadge(data.license)}]${renderLicenseLink(data.license)}
+[${renderLicenseBadge(data.license)}]${renderLicenseLink(data.license)}
   
-  ## Description
-  ${data.description}
+## Description
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
   
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
   
-  ## Installation
-  ${data.install}
+## Installation
+${data.install}
 
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
 
-  ## License
-  ${renderLicenseSection(data.license)} [${data.license}]${renderLicenseLink(data.license)}
+## License
+${renderLicenseSection(data.license)} [${data.license}]${renderLicenseLink(data.license)}
 
-  ## Contributing
-  To find out how to contribute:  
-  ${data.contribution}
+## Contributing
+To find out how to contribute:  
+${data.contribution}
 
-  ## Tests
-  ${data.tests}
+## Tests
+${data.tests}
 
-  ## Questions
-  [Github](https://github.com/${data.github}/)  
-  [${data.email}](${data.email})
+## Questions
+[Github](https://github.com/${data.github}/)  
+[${data.email}](${data.email})
 `;
 }
 
