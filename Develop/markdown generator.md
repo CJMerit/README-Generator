@@ -1,9 +1,9 @@
 # markdown generator 
 
-  [![License](https://img.shields.io/badge/License-The_Unlicense-blue.svg)](https://opensource.org/licenses/unlicense)
+  [![License](https://img.shields.io/badge/License-GNU_General_Public_License_v3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
   
   ## Description
-  Generate a markdown file based on user input
+  Generate a markdown file based on user inputs
 
   ## Table of Contents
   
@@ -11,22 +11,24 @@
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
   none
 
   ## Usage
-  Answer the prompts, then the program creates the markdown file automatically
+  Answer the prompts, then the program automatically generates the markdown file
 
   ## License
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  This app is covered under GNU General Public License v3.0. Read more at [GNU General Public License v3.0](https://opensource.org/licenses/GPL-3.0)
 
   ## Contributing
   To find out how to contribute:
-  Emial me for info
+  Email me for info
+
+  ## Tests
+  none
 
   ## Questions
-  ![Github](https://github.com/CJMerit/)
-  ![cmpsychward@gmail.com](cmpsychward@gmail.com)
+  [Github](https://github.com/CJMerit/)
+  [cmpsychward@gmail.com](cmpsychward@gmail.com)
